@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"> <!-- غيرت إلى ar للعربية، وdir="rtl" لدعم اليمين إلى اليسار -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QvenAI Platform</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script> <!-- إضافة Tailwind -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- إضافة Font Awesome -->
+</head>
+
+<body>
+  <!-- HEADER (الآن كـ nav جديد) -->
+<!-- HEADER -->
+<nav class="flex flex-row-reverse justify-between items-center px-6 py-4 border-b border-gray-800 bg-black/40 backdrop-blur-md">
+  <div class="flex items-center space-x-2 space-x-reverse">
+    <span class="font-semibold text-lg gradient-text">QvenAI</span>
+    <img src="logo.png" alt="QvenAI Logo" class="w-12 h-12 object-cover rounded-full" />
+  </div>
+  <div class="menu-icon">
+    <div></div><div></div><div></div>
+  </div>
+</nav>
+
+<!-- صورة تحت الهيدر -->
+<!-- صورة تحت الهيدر مع حواف دائرية 20% وحد برتقالي-أرجواني -->
+<div class="w-full">
+  <img src="LLM.png" alt="وصف الصورة" class="w-full h-auto block rounded-20p">
+</div>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- DIAGRAM -->
+    <section class="diagram">
+      <div class="center-pentagon">
+        <svg class="pentagon-svg" width="300" height="300" viewBox="0 0 400 400">
+          <defs>
+            <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#000;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <path d="M 247.02,94.16 L 286.12,122.58 A 80.00 80.00 0 0 1 315.18,212.02 L 315.18,212.02 L 300.26,257.98 A 80.00 80.00 0 0 1 224.16,313.26 L 224.16,313.26 L 175.84,313.26 A 80.00 80.00 0 0 1 99.74,257.98 L 99.74,257.98 L 84.82,212.02 A 80.00 80.00 0 0 1 113.88,122.58 L 113.88,122.58 L 152.98,94.16 A 80.00 80.00 0 0 1 247.02,94.16 Z" fill="url(#grad)" stroke="rgba(252, 46, 46, 0.4)" stroke-width="8" />
+        </svg>
+        <div class="logo-slot"></div>
+      </div>
+
+      <!-- connecting lines -->
+      <svg class="lines">
+        <line class="line" x1="50%" y1="50%" x2="50%" y2="10%" />
+        <line class="line" x1="50%" y1="50%" x2="10%" y2="40%" />
+        <line class="line" x1="50%" y1="50%" x2="90%" y2="40%" />
+        <line class="line" x1="50%" y1="50%" x2="30%" y2="90%" />
+        <line class="line" x1="50%" y1="50%" x2="70%" y2="90%" />
+      </svg>
+
+      <!-- CARDS -->
+      <div class="branch top">
+        <div class="card">
+          <div class="img-placeholder titan-img"></div>
+          <div class="card-content">
+            <h3>Titan</h3>
+            <p>نموذج ذكاء اصطناعي خاص بالشركة</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="branch left">
+        <div class="card">
+          <div class="img-placeholder chatbot-img"></div>
+          <div class="card-content">
+            <h3>Chatbot</h3>
+            <p>وكيل أتمتة ذكاء اصطناعي للدردشة</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="branch right">
+        <div class="card">
+          <div class="img-placeholder milty-img"></div>
+          <div class="card-content">
+            <h3>Multi</h3>
+            <p>وكيل ذكاء اصطناعي متعدد الوكلاء</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="branch bottom-left">
+        <div class="card">
+          <div class="img-placeholder news-img"></div>
+          <div class="card-content">
+            <h3>News</h3>
+            <p>منصة أخبار بالذكاء الاصطناعي</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="branch bottom-right">
+        <div class="card">
+          <div class="img-placeholder digitalagent-img"></div>
+          <div class="card-content">
+            <h3>Agent</h3>
+            <p>وكيل ذكاء اصطناعي رقمي</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer py-8 px-12 mt-16 bg-[#111]"> <!-- أضفت bg-[#111] للتوافق مع الثيم الداكن -->
+    <div class="flex justify-center space-x-4 space-x-reverse">
+      <a href="https://facebook.com" class="social-footer-icon w-8 h-8 flex items-center justify-center bg-gray-600 text-gray-300 rounded-full transition-all duration-300 hover:animate-pulse" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" class="social-footer-icon w-8 h-8 flex items-center justify-center bg-gray-600 text-gray-300 rounded-full transition-all duration-300 hover:animate-pulse" title="إنستجرام"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com" class="social-footer-icon w-8 h-8 flex items-center justify-center bg-gray-600 text-gray-300 rounded-full transition-all duration-300 hover:animate-pulse" title="منصة X"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://whatsapp.com" class="social-footer-icon w-8 h-8 flex items-center justify-center bg-gray-600 text-gray-300 rounded-full transition-all duration-300 hover:animate-pulse" title="واتساب"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://telegram.org" class="social-footer-icon w-8 h-8 flex items-center justify-center bg-gray-600 text-gray-300 rounded-full transition-all duration-300 hover:animate-pulse" title="تليجرام"><i class="fab fa-telegram-plane"></i></a>
+      <a href="https://discord.com" class="social-footer-icon w-8 h-8 flex items-center justify-center bg-gray-600 text-gray-300 rounded-full transition-all duration-300 hover:animate-pulse" title="ديسكورد"><i class="fab fa-discord"></i></a>
+      <a href="https://github.com" class="social-footer-icon w-8 h-8 flex items-center justify-center bg-gray-600 text-gray-300 rounded-full transition-all duration-300 hover:animate-pulse" title="جيت هاب"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
